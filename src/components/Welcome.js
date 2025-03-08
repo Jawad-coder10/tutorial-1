@@ -1,22 +1,11 @@
 import React from 'react'
-import logo from '../logo.svg'
+import Counter from './Counter';
 export default function Welcome() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Apprendre ReactJs
-        </a>
-      </header>
+    <div className="flex justify-center items-center">
+      <div className='m-12'>
+      <Counter/>
+      </div>
     </div>
   );
 }
