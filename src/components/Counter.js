@@ -5,11 +5,9 @@ export default function Counter() {
 
   useEffect(() => {
 
-    setTimeout(() => {
-      setCounter(counter+1)
-    }, (2000));
+      setCounter(counter+100)
 
-  });
+  },[]);
 
   return (
     <>
