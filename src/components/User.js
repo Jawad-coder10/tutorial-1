@@ -14,13 +14,16 @@ export default function User() {
         
     setData({
         ...data,
+       age: age__
     })
 
     /* ...data est une copie des donnees data */
     setData({
         name: "Amarrat",
         email: "amarrat@gmail.com",
-        age: 7,
+        //age: 7,
+
+        age: age__
     })
  }
 
