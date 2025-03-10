@@ -13,10 +13,15 @@ export default function User() {
  const handleChange = (age__) => {
         
     setData({
+        ...data,
+    })
+
+    /* ...data est une copie des donnees data */
+    setData({
         name: "Amarrat",
         email: "amarrat@gmail.com",
-        age: age__
-        })
+        age: 7,
+    })
  }
 
     return (
