@@ -1,9 +1,9 @@
 import './App.css';
-import Compteur from './components/Compteur'
+import User from './components/User';
 
 function App() {
   return (
-      <Compteur/>
+      <User/>
   );
 }
 
