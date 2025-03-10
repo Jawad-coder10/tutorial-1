@@ -16,15 +16,6 @@ export default function User() {
         ...data,
        age: age__
     })
-
-    /* ...data est une copie des donnees data */
-    setData({
-        name: "Amarrat",
-        email: "amarrat@gmail.com",
-        //age: 7,
-
-        age: age__
-    })
  }
 
     return (
