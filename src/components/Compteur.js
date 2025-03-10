@@ -1,13 +1,15 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 export default function Compteur() {
 
     const [counter, setCounter] = useState(0);
+    const [active, isActive] = useState(false);
 
-    function add() {
+    useEffect(() => {
 
+        setCounter(counter+200)
 
-    }
+    },[active]);
 
   return (
     <div className='h-full mt-16 flex flex-col items-center justify-center'>
@@ -29,7 +31,8 @@ export default function Compteur() {
     
     <div className='flex gap-5 items items-center mt-5'>
       <button
-      className='px-10 py-2 bg-green-400 text-white'>Cliquer </button>
+      onClick={()=> isActive(!active)}
+      className='px-10 py-2 bg-green-400 text-white'>Cliquer: {JSON.stringify(active)} </button>
     </div>
     </div>
   )
