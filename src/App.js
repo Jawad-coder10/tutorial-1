@@ -1,11 +1,9 @@
 import './App.css';
-import Welcome from './components/Welcome';
+import Compteur from './components/Compteur'
 
 function App() {
   return (
-    <>
-     <Welcome/>
-    </>
+      <Compteur/>
   );
 }
 
