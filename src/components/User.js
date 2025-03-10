@@ -1,12 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 export default function User() {
 
-    const data = {
+   const [data, setData] = useState(
+    {
+    name: "Amarrat",
+    email: "amarrat@gmail.com",
+    age: 7
+    }
+)
+
+ const handleChange = (age__) => {
+        
+    setData({
         name: "Amarrat",
         email: "amarrat@gmail.com",
-        age: 7
-    };
+        age: age__
+        })
+ }
 
     return (
         <div>
@@ -31,8 +42,8 @@ export default function User() {
         </div>
 
         <div className='flex mt-8 text-white gap-7 items-center justify-center'>
-            <button className='px-5 py-3 bg-blue-500 rounded-lg'> 70 ans </button>
-            <button className='px-5 py-3 bg-blue-500 rounded-lg'> 100 ans </button>
+            <button className='px-5 py-3 bg-blue-500 rounded-lg' onClick={()=> handleChange(70) }> 70 ans </button>
+            <button className='px-5 py-3 bg-blue-500 rounded-lg' onClick={()=> handleChange(100) }> 100 ans </button>
         </div>
         </div>
     );
