@@ -6,7 +6,7 @@ export default function Welcome() {
   return (
     <div className="flex justify-center items-center">
       <div className='m-12'>
-      <Counter/>
+      Bonjour
       </div>
     </div>
   );
